@@ -133,6 +133,34 @@
                                     <segue destination="eqE-2W-q1P" kind="presentation" identifier="toNext" modalPresentationStyle="fullScreen" id="dGo-eU-oJO"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="難易度" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJm-Oo-M3n">
+                                <rect key="frame" x="112" y="582" width="158" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvB-zg-6Yq">
+                                <rect key="frame" x="49" y="598" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&lt;"/>
+                                <connections>
+                                    <action selector="back2" destination="WR1-sK-6uf" eventType="touchDown" id="mlP-DI-j1b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dbb-yf-Ckw">
+                                <rect key="frame" x="323" y="598" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="&gt;"/>
+                                <connections>
+                                    <action selector="next2" destination="WR1-sK-6uf" eventType="touchDown" id="YDT-p9-vn5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wy9-e8-x7K"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -141,6 +169,7 @@
                     <connections>
                         <outlet property="imageView" destination="Ytf-Uf-xTm" id="MNy-SA-uGd"/>
                         <outlet property="nameLabel" destination="fZ5-vI-nkD" id="CCI-V9-S9O"/>
+                        <outlet property="nanidoLabel" destination="gJm-Oo-M3n" id="aIn-FT-H3r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZJa-i2-xJc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

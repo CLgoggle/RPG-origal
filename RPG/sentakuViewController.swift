@@ -11,12 +11,16 @@ class sentakuViewController: UIViewController {
     
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var imageView: UIImageView!
+    @IBOutlet var nanidoLabel: UILabel!
     
     var animalArray: [Enemy] = [
     enemy,raizin,mahotukai,yaritukai,mazin,rich
     ]
     
+    var nanidoArray = ["簡単","普通","難しい"]
+    
     var index: Int = 0
+    var index2: Int = 0
     
 
     override func viewDidLoad() {
@@ -25,6 +29,7 @@ class sentakuViewController: UIViewController {
         TechMonManager.playBGM(fileName: "sentaku_BGM")
         // Do any additional setup after loading the view.
         setUI()
+        setUI2()
     }
     
     @IBAction func next(){
@@ -56,9 +61,50 @@ class sentakuViewController: UIViewController {
         if segue.identifier == "toNext" {
             let nextView = segue.destination as! BattleViewController
             nextView.enemy = animalArray[index]
-            animalArray = [enemy,raizin,mahotukai,yaritukai,mazin,rich]
+            
+            var ratio = 1
+            if nanidoArray[index2] == "簡単" {
+                ratio = 1
+            }else if nanidoArray[index2] == "普通"{
+                ratio = 2
+            }else {
+                ratio = 4
+            }
+            nextView.enemy.maxHP = nextView.enemy.maxHP * Float(ratio)
+            nextView.enemy.currentHP = nextView.enemy.maxHP
+            if ratio > 1{
+                nextView.enemy.attackPoint = nextView.enemy.attackPoint * Float(ratio / 2)
+            }else {
+                nextView.enemy.attackPoint = nextView.enemy.attackPoint * Float(ratio)
+            }
         }
+        animalArray = [enemy,raizin,mahotukai,yaritukai,mazin,rich]
     }
+    @IBAction func next2(){
+        if index2 == nanidoArray.count - 1 {
+            index2 = 0
+        }else {
+            index2 += 1
+        }
+        setUI2()
+        
+    }
+    
+    @IBAction func back2(){
+        if index2 == 0 {
+            index = nanidoArray.count - 1
+        }else {
+            
+            index2 -= 1
+        }
+        setUI2()
+    }
+    
+    func setUI2() {
+        nanidoLabel.text = nanidoArray[index2]
+    }
+    
+    
     
 
     /*

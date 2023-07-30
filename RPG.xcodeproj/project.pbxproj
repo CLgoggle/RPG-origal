@@ -36,6 +36,12 @@
 		BC2EE41C29FE37BB00293E1B /* misaki_gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC2EE40029FE37BB00293E1B /* misaki_gothic.ttf */; };
 		BCE28D702A5120DC00F43694 /* EnemyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE28D6F2A5120DC00F43694 /* EnemyList.swift */; };
 		BCE28D942A51445600F43694 /* sentakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE28D932A51445600F43694 /* sentakuViewController.swift */; };
+		BCF111332A760F0C00292B59 /* sentaku_BGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCF111322A760F0C00292B59 /* sentaku_BGM.mp3 */; };
+		BCF111352A763F0A00292B59 /* tsurugi_bronze_sabi_red.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF111342A763F0A00292B59 /* tsurugi_bronze_sabi_red.png */; };
+		BCF111372A763FF200292B59 /* tsurugi_bronze_red.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF111362A763FF100292B59 /* tsurugi_bronze_red.png */; };
+		BCF111392A76401B00292B59 /* sword_longsword_monochrome.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF111382A76401B00292B59 /* sword_longsword_monochrome.png */; };
+		BCF1113B2A76401F00292B59 /* sword_shortsword_brown.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF1113A2A76401F00292B59 /* sword_shortsword_brown.png */; };
+		BCF1113D2A76402200292B59 /* sword_longsword_brown.png in Resources */ = {isa = PBXBuildFile; fileRef = BCF1113C2A76402200292B59 /* sword_longsword_brown.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +76,12 @@
 		BC2EE40029FE37BB00293E1B /* misaki_gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = misaki_gothic.ttf; sourceTree = "<group>"; };
 		BCE28D6F2A5120DC00F43694 /* EnemyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyList.swift; sourceTree = "<group>"; };
 		BCE28D932A51445600F43694 /* sentakuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sentakuViewController.swift; sourceTree = "<group>"; };
+		BCF111322A760F0C00292B59 /* sentaku_BGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sentaku_BGM.mp3; sourceTree = "<group>"; };
+		BCF111342A763F0A00292B59 /* tsurugi_bronze_sabi_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tsurugi_bronze_sabi_red.png; sourceTree = "<group>"; };
+		BCF111362A763FF100292B59 /* tsurugi_bronze_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tsurugi_bronze_red.png; sourceTree = "<group>"; };
+		BCF111382A76401B00292B59 /* sword_longsword_monochrome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sword_longsword_monochrome.png; sourceTree = "<group>"; };
+		BCF1113A2A76401F00292B59 /* sword_shortsword_brown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sword_shortsword_brown.png; sourceTree = "<group>"; };
+		BCF1113C2A76402200292B59 /* sword_longsword_brown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sword_longsword_brown.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +151,11 @@
 				BC2EE3EF29FE37BB00293E1B /* gold_button.png */,
 				BC2EE3F029FE37BB00293E1B /* yusya.png */,
 				BC2EE3F129FE37BB00293E1B /* monster.png */,
+				BCF111342A763F0A00292B59 /* tsurugi_bronze_sabi_red.png */,
+				BCF111362A763FF100292B59 /* tsurugi_bronze_red.png */,
+				BCF111382A76401B00292B59 /* sword_longsword_monochrome.png */,
+				BCF1113A2A76401F00292B59 /* sword_shortsword_brown.png */,
+				BCF1113C2A76402200292B59 /* sword_longsword_brown.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -157,6 +174,7 @@
 		BC2EE3F729FE37BB00293E1B /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				BCF111322A760F0C00292B59 /* sentaku_BGM.mp3 */,
 				BC2EE3F829FE37BB00293E1B /* SE_fanfare.mp3 */,
 				BC2EE3F929FE37BB00293E1B /* BGM_battle001.mp3 */,
 				BC2EE3FA29FE37BB00293E1B /* SE_fire.mp3 */,
@@ -234,11 +252,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF1113D2A76402200292B59 /* sword_longsword_brown.png in Resources */,
 				BC2EE3C229FE0DCA00293E1B /* LaunchScreen.storyboard in Resources */,
 				BC2EE40B29FE37BB00293E1B /* battlebg.png in Resources */,
 				BC2EE41729FE37BB00293E1B /* SE_fire.mp3 in Resources */,
+				BCF111332A760F0C00292B59 /* sentaku_BGM.mp3 in Resources */,
 				BC2EE41529FE37BB00293E1B /* SE_fanfare.mp3 in Resources */,
 				BC2EE41929FE37BB00293E1B /* SE_gameover.mp3 in Resources */,
+				BCF111392A76401B00292B59 /* sword_longsword_monochrome.png in Resources */,
 				BC2EE41629FE37BB00293E1B /* BGM_battle001.mp3 in Resources */,
 				BC2EE41B29FE37BB00293E1B /* lobby.mp3 in Resources */,
 				BC2EE41029FE37BB00293E1B /* monster.png in Resources */,
@@ -249,9 +270,12 @@
 				BC2EE41829FE37BB00293E1B /* SE_attack.mp3 in Resources */,
 				BC2EE3BF29FE0DCA00293E1B /* Assets.xcassets in Resources */,
 				BC2EE40A29FE37BB00293E1B /* lobby.png in Resources */,
+				BCF111352A763F0A00292B59 /* tsurugi_bronze_sabi_red.png in Resources */,
+				BCF1113B2A76401F00292B59 /* sword_shortsword_brown.png in Resources */,
 				BC2EE40C29FE37BB00293E1B /* bgimage.jpg in Resources */,
 				BC2EE41A29FE37BB00293E1B /* SE_charge.mp3 in Resources */,
 				BC2EE3BD29FE0DC800293E1B /* Main.storyboard in Resources */,
+				BCF111372A763FF200292B59 /* tsurugi_bronze_red.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
