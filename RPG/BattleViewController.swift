@@ -18,6 +18,7 @@ class BattleViewController: UIViewController {
     @IBOutlet var enemyImageView: UIImageView!
     @IBOutlet var enemyHPBar: UIProgressView!
     
+    var str = ""
     var player: Player!
     var enemy: Enemy!
     
@@ -28,12 +29,13 @@ class BattleViewController: UIViewController {
         super.viewDidLoad()
         
         
+        
         playerHPBar.transform = CGAffineTransform(scaleX: 1.0, y: 4.0)
         enemyHPBar.transform = CGAffineTransform(scaleX: 1.0, y: 4.0)
         
         player = Player(name: "主人公", imageName: "yusya.png", attackPoint: 20, fireAttackPoint: 100, maxHP: 100, maxTP: 100, bahu: 0)
         
-        enemy = Enemy(name: "ドラゴン", imageName: "monster.png", attackPoint: 10, maxHP: 300)
+//        enemy = Enemy(name: "ドラゴン", imageName: "monster.png", attackPoint: 10, maxHP: 300)
         
         playerNameLabel.text = player.name
         playerImageView.image = player.image
@@ -45,6 +47,9 @@ class BattleViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -199,6 +204,7 @@ class BattleViewController: UIViewController {
         preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in self.dismiss(animated: true)}))
         present(alert, animated: true)
+        enemy.currentHP = enemy.maxHP
     }
 
     /*
