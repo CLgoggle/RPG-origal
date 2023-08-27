@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1398D92A9AF6BE00C0F0D8 /* bukisentakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1398D82A9AF6BE00C0F0D8 /* bukisentakuViewController.swift */; };
 		BC2EE3B629FE0DC800293E1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EE3B529FE0DC800293E1B /* AppDelegate.swift */; };
 		BC2EE3B829FE0DC800293E1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2EE3B729FE0DC800293E1B /* SceneDelegate.swift */; };
 		BC2EE3BD29FE0DC800293E1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC2EE3BB29FE0DC800293E1B /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC1398D82A9AF6BE00C0F0D8 /* bukisentakuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bukisentakuViewController.swift; sourceTree = "<group>"; };
 		BC2EE3B229FE0DC800293E1B /* RPG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2EE3B529FE0DC800293E1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC2EE3B729FE0DC800293E1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				BC2EE3CD29FE34AE00293E1B /* BattleViewController.swift */,
 				BCE28D932A51445600F43694 /* sentakuViewController.swift */,
 				BCE28D6F2A5120DC00F43694 /* EnemyList.swift */,
+				BC1398D82A9AF6BE00C0F0D8 /* bukisentakuViewController.swift */,
 			);
 			path = RPG;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				BC2EE41129FE37BB00293E1B /* TechMonManager.swift in Sources */,
 				BC2EE3CC29FE345E00293E1B /* LobbyViewController.swift in Sources */,
 				BC2EE41229FE37BB00293E1B /* Character.swift in Sources */,
+				BC1398D92A9AF6BE00C0F0D8 /* bukisentakuViewController.swift in Sources */,
 				BC2EE40929FE37BB00293E1B /* ViewController.swift in Sources */,
 				BCE28D702A5120DC00F43694 /* EnemyList.swift in Sources */,
 				BC2EE3CE29FE34AE00293E1B /* BattleViewController.swift in Sources */,
