@@ -76,8 +76,10 @@ class BattleViewController: UIViewController {
     @IBAction func attackAction() {
         TechMonManager.damageAnimation(imageView: enemyImageView)
         TechMonManager.playSE(fileName: "SE_attack")
+        let savedValue2 = UserDefaults.standard.integer(forKey: "bukiattack")
+            enemy.currentHP -= player.attackPoint + Float(player.bahu) + Float(savedValue2)
         
-        enemy.currentHP -= player.attackPoint + Float(player.bahu)
+        
         
         player.currentTP += 5
         if player.currentTP >= player.maxTP {
@@ -176,7 +178,8 @@ class BattleViewController: UIViewController {
     @objc func enemyAttack() {
         TechMonManager.damageAnimation(imageView: playerImageView)
         TechMonManager.playSE(fileName: "SE_attack")
-        player.currentHP -= enemy.attackPoint
+        let savedValue3 = UserDefaults.standard.integer(forKey: "bougusuti")
+        player.currentHP -= enemy.attackPoint - Float(savedValue3)
         
         updateUI()
         

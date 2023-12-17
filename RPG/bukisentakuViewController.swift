@@ -19,10 +19,16 @@ class bukisentakuViewController: UIViewController {
         "錆びたブロンズソード","ブロンズソード","ショートソード","ロングソード","ブロンズロングソード"
     ]
     
-    var nanidoArray = ["簡単","普通","難しい"]
+    var bukiattack: [Int] = [
+    1,3,2,4,5]
+    
+    var nanidoArray: [String] = ["名のとおり錆びている剣。他の剣より攻撃力が低い",
+                                 "一般的な長さの剣",
+                                 "一般的なものより短い剣",
+                                 "一般的なものより長く、輝かしい剣",
+                                 "一般的なものより長い剣"]
     
     var index: Int = 0
-    var index2: Int = 0
     
         
 
@@ -38,6 +44,7 @@ setUI()
     func setUI() {
         imageView.image = UIImage(named: bukiArray[index])
         nameLabel.text = nameArray[index]
+        nanidoLabel.text = nanidoArray[index]
     }
     
     @IBAction func next(){
@@ -61,6 +68,15 @@ setUI()
     }
     
     @IBAction func close(){
+        let Value = bukiArray[index]
+        UserDefaults.standard.set(Value, forKey: "buki")
+        let Value2 = bukiattack[index]
+        UserDefaults.standard.set(Value2, forKey: "bukiattack")
+        if let savedValue = UserDefaults.standard.string(forKey: "buki"){
+            print(savedValue)
+        }else {
+            print("見つかりません")
+        }
         dismiss(animated: true)
     }
     

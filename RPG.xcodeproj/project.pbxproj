@@ -35,6 +35,11 @@
 		BC2EE41A29FE37BB00293E1B /* SE_charge.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC2EE3FD29FE37BB00293E1B /* SE_charge.mp3 */; };
 		BC2EE41B29FE37BB00293E1B /* lobby.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC2EE3FE29FE37BB00293E1B /* lobby.mp3 */; };
 		BC2EE41C29FE37BB00293E1B /* misaki_gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC2EE40029FE37BB00293E1B /* misaki_gothic.ttf */; };
+		BCCEAE6A2B1C2250000FA5BA /* armor_koshiate_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = BCCEAE662B1C2250000FA5BA /* armor_koshiate_blue.png */; };
+		BCCEAE6B2B1C2250000FA5BA /* armor_koshiate_iron.png in Resources */ = {isa = PBXBuildFile; fileRef = BCCEAE672B1C2250000FA5BA /* armor_koshiate_iron.png */; };
+		BCCEAE6C2B1C2250000FA5BA /* armor_koshiate_green.png in Resources */ = {isa = PBXBuildFile; fileRef = BCCEAE682B1C2250000FA5BA /* armor_koshiate_green.png */; };
+		BCCEAE6D2B1C2250000FA5BA /* armor_koshiate_red.png in Resources */ = {isa = PBXBuildFile; fileRef = BCCEAE692B1C2250000FA5BA /* armor_koshiate_red.png */; };
+		BCCEAE712B1C28DA000FA5BA /* bougusentakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCEAE702B1C28DA000FA5BA /* bougusentakuViewController.swift */; };
 		BCE28D702A5120DC00F43694 /* EnemyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE28D6F2A5120DC00F43694 /* EnemyList.swift */; };
 		BCE28D942A51445600F43694 /* sentakuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE28D932A51445600F43694 /* sentakuViewController.swift */; };
 		BCF111332A760F0C00292B59 /* sentaku_BGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCF111322A760F0C00292B59 /* sentaku_BGM.mp3 */; };
@@ -76,6 +81,11 @@
 		BC2EE3FD29FE37BB00293E1B /* SE_charge.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SE_charge.mp3; sourceTree = "<group>"; };
 		BC2EE3FE29FE37BB00293E1B /* lobby.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lobby.mp3; sourceTree = "<group>"; };
 		BC2EE40029FE37BB00293E1B /* misaki_gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = misaki_gothic.ttf; sourceTree = "<group>"; };
+		BCCEAE662B1C2250000FA5BA /* armor_koshiate_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = armor_koshiate_blue.png; sourceTree = "<group>"; };
+		BCCEAE672B1C2250000FA5BA /* armor_koshiate_iron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = armor_koshiate_iron.png; sourceTree = "<group>"; };
+		BCCEAE682B1C2250000FA5BA /* armor_koshiate_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = armor_koshiate_green.png; sourceTree = "<group>"; };
+		BCCEAE692B1C2250000FA5BA /* armor_koshiate_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = armor_koshiate_red.png; sourceTree = "<group>"; };
+		BCCEAE702B1C28DA000FA5BA /* bougusentakuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bougusentakuViewController.swift; sourceTree = "<group>"; };
 		BCE28D6F2A5120DC00F43694 /* EnemyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyList.swift; sourceTree = "<group>"; };
 		BCE28D932A51445600F43694 /* sentakuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sentakuViewController.swift; sourceTree = "<group>"; };
 		BCF111322A760F0C00292B59 /* sentaku_BGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sentaku_BGM.mp3; sourceTree = "<group>"; };
@@ -125,10 +135,11 @@
 				BC2EE3C029FE0DCA00293E1B /* LaunchScreen.storyboard */,
 				BC2EE3C329FE0DCA00293E1B /* Info.plist */,
 				BC2EE3CB29FE345E00293E1B /* LobbyViewController.swift */,
+				BCCEAE702B1C28DA000FA5BA /* bougusentakuViewController.swift */,
+				BC1398D82A9AF6BE00C0F0D8 /* bukisentakuViewController.swift */,
 				BC2EE3CD29FE34AE00293E1B /* BattleViewController.swift */,
 				BCE28D932A51445600F43694 /* sentakuViewController.swift */,
 				BCE28D6F2A5120DC00F43694 /* EnemyList.swift */,
-				BC1398D82A9AF6BE00C0F0D8 /* bukisentakuViewController.swift */,
 			);
 			path = RPG;
 			sourceTree = "<group>";
@@ -147,6 +158,10 @@
 		BC2EE3EA29FE37BB00293E1B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				BCCEAE662B1C2250000FA5BA /* armor_koshiate_blue.png */,
+				BCCEAE682B1C2250000FA5BA /* armor_koshiate_green.png */,
+				BCCEAE672B1C2250000FA5BA /* armor_koshiate_iron.png */,
+				BCCEAE692B1C2250000FA5BA /* armor_koshiate_red.png */,
 				BC2EE3EB29FE37BB00293E1B /* lobby.png */,
 				BC2EE3EC29FE37BB00293E1B /* battlebg.png */,
 				BC2EE3ED29FE37BB00293E1B /* bgimage.jpg */,
@@ -260,13 +275,17 @@
 				BC2EE40B29FE37BB00293E1B /* battlebg.png in Resources */,
 				BC2EE41729FE37BB00293E1B /* SE_fire.mp3 in Resources */,
 				BCF111332A760F0C00292B59 /* sentaku_BGM.mp3 in Resources */,
+				BCCEAE6B2B1C2250000FA5BA /* armor_koshiate_iron.png in Resources */,
+				BCCEAE6A2B1C2250000FA5BA /* armor_koshiate_blue.png in Resources */,
 				BC2EE41529FE37BB00293E1B /* SE_fanfare.mp3 in Resources */,
 				BC2EE41929FE37BB00293E1B /* SE_gameover.mp3 in Resources */,
 				BCF111392A76401B00292B59 /* sword_longsword_monochrome.png in Resources */,
 				BC2EE41629FE37BB00293E1B /* BGM_battle001.mp3 in Resources */,
+				BCCEAE6C2B1C2250000FA5BA /* armor_koshiate_green.png in Resources */,
 				BC2EE41B29FE37BB00293E1B /* lobby.mp3 in Resources */,
 				BC2EE41029FE37BB00293E1B /* monster.png in Resources */,
 				BC2EE41C29FE37BB00293E1B /* misaki_gothic.ttf in Resources */,
+				BCCEAE6D2B1C2250000FA5BA /* armor_koshiate_red.png in Resources */,
 				BC2EE40D29FE37BB00293E1B /* waku.png in Resources */,
 				BC2EE40E29FE37BB00293E1B /* gold_button.png in Resources */,
 				BC2EE40F29FE37BB00293E1B /* yusya.png in Resources */,
@@ -291,6 +310,7 @@
 			files = (
 				BC2EE3B629FE0DC800293E1B /* AppDelegate.swift in Sources */,
 				BC2EE3B829FE0DC800293E1B /* SceneDelegate.swift in Sources */,
+				BCCEAE712B1C28DA000FA5BA /* bougusentakuViewController.swift in Sources */,
 				BC2EE41329FE37BB00293E1B /* Enemy.swift in Sources */,
 				BC2EE41429FE37BB00293E1B /* Player.swift in Sources */,
 				BC2EE41129FE37BB00293E1B /* TechMonManager.swift in Sources */,
