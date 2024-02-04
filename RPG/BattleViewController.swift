@@ -21,6 +21,8 @@ class BattleViewController: UIViewController {
     var str = ""
     var player: Player!
     var enemy: Enemy!
+    let defaults = UserDefaults.standard
+    var currentMoney: UInt32 = 0
     
     
     var enemyAttakTime: Timer!
@@ -77,7 +79,7 @@ class BattleViewController: UIViewController {
         TechMonManager.damageAnimation(imageView: enemyImageView)
         TechMonManager.playSE(fileName: "SE_attack")
         let savedValue2 = UserDefaults.standard.integer(forKey: "bukiattack")
-            enemy.currentHP -= player.attackPoint + Float(player.bahu) + Float(savedValue2)
+        enemy.currentHP -= player.attackPoint + Float(player.bahu) + Float(savedValue2)
         
         
         
@@ -90,9 +92,17 @@ class BattleViewController: UIViewController {
         updateUI()
         
         if enemy.currentHP <= 0{
+            var enemyCount = defaults.integer(forKey: "enemyCount")
+            var Money = defaults.integer(forKey: "Money")
+            enemyCount += 1
+            Money += Int.random(in: 100...500)
+            defaults.set(enemyCount, forKey: "enemyCount")
+            defaults.set(Money, forKey: "Money")
             finishBattle(vanishImageView: enemyImageView, isPlayerWin: true)
+            
         }
     }
+    
     
     
     
@@ -131,7 +141,14 @@ class BattleViewController: UIViewController {
         updateUI()
         
         if enemy.currentHP <= 0 {
+            var enemyCount = defaults.integer(forKey: "enemyCount")
+            var Money = defaults.integer(forKey: "Money")
+            enemyCount += 1
+            Money += Int.random(in: 100...500)
+            defaults.set(enemyCount, forKey: "enemyCount")
+            defaults.set(Money, forKey: "Money")
             finishBattle(vanishImageView: enemyImageView, isPlayerWin: true)
+           
         }
     }
     
@@ -149,6 +166,12 @@ class BattleViewController: UIViewController {
         updateUI()
         
         if enemy.currentHP <= 0 {
+            var enemyCount = defaults.integer(forKey: "enemyCount")
+            var Money = defaults.integer(forKey: "Money")
+            enemyCount += 1
+            Money += Int.random(in: 100...500)
+            defaults.set(enemyCount, forKey: "enemyCount")
+            defaults.set(Money, forKey: "Money")
             finishBattle(vanishImageView: enemyImageView, isPlayerWin: true)
         }
     }
@@ -170,6 +193,12 @@ class BattleViewController: UIViewController {
         updateUI()
         
         if enemy.currentHP <= 0 {
+            var enemyCount = defaults.integer(forKey: "enemyCount")
+            var Money = defaults.integer(forKey: "Money")
+            enemyCount += 1
+            Money += Int.random(in: 100...500)
+            defaults.set(enemyCount, forKey: "enemyCount")
+            defaults.set(Money, forKey: "Money")
             finishBattle(vanishImageView: enemyImageView, isPlayerWin: true)
         }
     }
@@ -209,7 +238,6 @@ class BattleViewController: UIViewController {
         present(alert, animated: true)
         enemy.currentHP = enemy.maxHP
     }
-
     /*
     // MARK: - Navigation
 

@@ -100,13 +100,29 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCU-c4-X5V">
+                                <rect key="frame" x="0.0" y="281" width="155" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sds-1r-xLx">
+                                <rect key="frame" x="0.0" y="312" width="155" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="MoneyLabel" destination="Sds-1r-xLx" id="QmD-eN-0ag"/>
                         <outlet property="attackLabel" destination="Dsn-5T-nbO" id="VJo-kK-y83"/>
                         <outlet property="bouguLabel" destination="b72-P3-vA0" id="mSi-Dn-8MB"/>
+                        <outlet property="enemyCountLabel" destination="iCU-c4-X5V" id="b3Z-eR-tW1"/>
                         <outlet property="imageView" destination="uGC-Lv-mC1" id="UG5-1S-haN"/>
                         <outlet property="imageView2" destination="dul-tU-Vxb" id="WmO-bi-2Uh"/>
                     </connections>
@@ -297,6 +313,16 @@
                                 <buttonConfiguration key="configuration" style="plain" title="&gt;"/>
                                 <connections>
                                     <action selector="next2" destination="WR1-sK-6uf" eventType="touchDown" id="YDT-p9-vn5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaB-Om-vdb">
+                                <rect key="frame" x="24" y="41" width="59" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="戻る"/>
+                                <connections>
+                                    <action selector="back1234" destination="WR1-sK-6uf" eventType="touchDown" id="8bZ-pc-iiK"/>
                                 </connections>
                             </button>
                         </subviews>

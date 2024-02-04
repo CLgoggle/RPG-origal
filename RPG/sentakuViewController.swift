@@ -100,6 +100,10 @@ class sentakuViewController: UIViewController {
         setUI2()
     }
     
+    @IBAction func back1234(){
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     func setUI2() {
         nanidoLabel.text = nanidoArray[index2]
     }
