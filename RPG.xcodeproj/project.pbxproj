@@ -35,6 +35,7 @@
 		BC2EE41A29FE37BB00293E1B /* SE_charge.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC2EE3FD29FE37BB00293E1B /* SE_charge.mp3 */; };
 		BC2EE41B29FE37BB00293E1B /* lobby.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC2EE3FE29FE37BB00293E1B /* lobby.mp3 */; };
 		BC2EE41C29FE37BB00293E1B /* misaki_gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC2EE40029FE37BB00293E1B /* misaki_gothic.ttf */; };
+		BC84DB332B6F510A0087E1C6 /* shopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC84DB322B6F510A0087E1C6 /* shopViewController.swift */; };
 		BCCEAE6A2B1C2250000FA5BA /* armor_koshiate_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = BCCEAE662B1C2250000FA5BA /* armor_koshiate_blue.png */; };
 		BCCEAE6B2B1C2250000FA5BA /* armor_koshiate_iron.png in Resources */ = {isa = PBXBuildFile; fileRef = BCCEAE672B1C2250000FA5BA /* armor_koshiate_iron.png */; };
 		BCCEAE6C2B1C2250000FA5BA /* armor_koshiate_green.png in Resources */ = {isa = PBXBuildFile; fileRef = BCCEAE682B1C2250000FA5BA /* armor_koshiate_green.png */; };
@@ -81,6 +82,7 @@
 		BC2EE3FD29FE37BB00293E1B /* SE_charge.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SE_charge.mp3; sourceTree = "<group>"; };
 		BC2EE3FE29FE37BB00293E1B /* lobby.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lobby.mp3; sourceTree = "<group>"; };
 		BC2EE40029FE37BB00293E1B /* misaki_gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = misaki_gothic.ttf; sourceTree = "<group>"; };
+		BC84DB322B6F510A0087E1C6 /* shopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shopViewController.swift; sourceTree = "<group>"; };
 		BCCEAE662B1C2250000FA5BA /* armor_koshiate_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = armor_koshiate_blue.png; sourceTree = "<group>"; };
 		BCCEAE672B1C2250000FA5BA /* armor_koshiate_iron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = armor_koshiate_iron.png; sourceTree = "<group>"; };
 		BCCEAE682B1C2250000FA5BA /* armor_koshiate_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = armor_koshiate_green.png; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				BC2EE3C029FE0DCA00293E1B /* LaunchScreen.storyboard */,
 				BC2EE3C329FE0DCA00293E1B /* Info.plist */,
 				BC2EE3CB29FE345E00293E1B /* LobbyViewController.swift */,
+				BC84DB322B6F510A0087E1C6 /* shopViewController.swift */,
 				BCCEAE702B1C28DA000FA5BA /* bougusentakuViewController.swift */,
 				BC1398D82A9AF6BE00C0F0D8 /* bukisentakuViewController.swift */,
 				BC2EE3CD29FE34AE00293E1B /* BattleViewController.swift */,
@@ -308,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC84DB332B6F510A0087E1C6 /* shopViewController.swift in Sources */,
 				BC2EE3B629FE0DC800293E1B /* AppDelegate.swift in Sources */,
 				BC2EE3B829FE0DC800293E1B /* SceneDelegate.swift in Sources */,
 				BCCEAE712B1C28DA000FA5BA /* bougusentakuViewController.swift in Sources */,
