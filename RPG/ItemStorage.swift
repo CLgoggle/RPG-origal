@@ -17,6 +17,7 @@ class ItemStorage {
     ]
     
     
+    
     static var myBougu:[Int] = [
         1,
         0,
