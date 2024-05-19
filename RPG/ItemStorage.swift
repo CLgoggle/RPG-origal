@@ -44,19 +44,19 @@ class ItemStorage {
     
     static var bukiAttackArray: [Int] = [
         1,
-        3,
-        2,
-        4,
-        5
+        13,
+        7,
+        18,
+        23
     ]
     
     
     static var bukiPriceArray: [Int] = [
         100,
-        100,
-        200,
-        100,
-        100
+        750,
+        500,
+        1000,
+        1350
     ]
     static var bukiKaisetuArray: [String] = [
         "名のとおり錆びている剣。他の剣より攻撃力が低い",

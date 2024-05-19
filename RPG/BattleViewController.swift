@@ -116,6 +116,7 @@ class BattleViewController: UIViewController {
         }
         
         updateUI()
+        judgeenemy()
     }
     
     @IBAction func fireAction() {
