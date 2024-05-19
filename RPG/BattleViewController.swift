@@ -91,16 +91,7 @@ class BattleViewController: UIViewController {
         
         updateUI()
         
-        if enemy.currentHP <= 0{
-            var enemyCount = defaults.integer(forKey: "enemyCount")
-            var Money = defaults.integer(forKey: "Money")
-            enemyCount += 1
-            Money += Int.random(in: 100...500)
-            defaults.set(enemyCount, forKey: "enemyCount")
-            defaults.set(Money, forKey: "Money")
-            finishBattle(vanishImageView: enemyImageView, isPlayerWin: true)
-            
-        }
+        judgeenemy()
     }
     
     
@@ -140,16 +131,7 @@ class BattleViewController: UIViewController {
         
         updateUI()
         
-        if enemy.currentHP <= 0 {
-            var enemyCount = defaults.integer(forKey: "enemyCount")
-            var Money = defaults.integer(forKey: "Money")
-            enemyCount += 1
-            Money += Int.random(in: 100...500)
-            defaults.set(enemyCount, forKey: "enemyCount")
-            defaults.set(Money, forKey: "Money")
-            finishBattle(vanishImageView: enemyImageView, isPlayerWin: true)
-           
-        }
+        judgeenemy()
     }
     
     @IBAction func iceAction() {
@@ -164,16 +146,7 @@ class BattleViewController: UIViewController {
         }
         
         updateUI()
-        
-        if enemy.currentHP <= 0 {
-            var enemyCount = defaults.integer(forKey: "enemyCount")
-            var Money = defaults.integer(forKey: "Money")
-            enemyCount += 1
-            Money += Int.random(in: 100...500)
-            defaults.set(enemyCount, forKey: "enemyCount")
-            defaults.set(Money, forKey: "Money")
-            finishBattle(vanishImageView: enemyImageView, isPlayerWin: true)
-        }
+        judgeenemy()
     }
     
     @IBAction func healaction() {
@@ -191,16 +164,8 @@ class BattleViewController: UIViewController {
         }
         
         updateUI()
+        judgeenemy()
         
-        if enemy.currentHP <= 0 {
-            var enemyCount = defaults.integer(forKey: "enemyCount")
-            var Money = defaults.integer(forKey: "Money")
-            enemyCount += 1
-            Money += Int.random(in: 100...500)
-            defaults.set(enemyCount, forKey: "enemyCount")
-            defaults.set(Money, forKey: "Money")
-            finishBattle(vanishImageView: enemyImageView, isPlayerWin: true)
-        }
     }
     
     
@@ -238,6 +203,28 @@ class BattleViewController: UIViewController {
         present(alert, animated: true)
         enemy.currentHP = enemy.maxHP
     }
+    func judgeenemy() {
+        if enemy.currentHP <= 0 {
+            var enemyCount = defaults.integer(forKey: "enemyCount")
+            var Money = defaults.integer(forKey: "Money")
+            enemyCount += 1
+            if enemy.name == "ドラゴン" {
+                Money += 100
+            }else if enemy.name == "雷神"{
+                Money += 200
+            }else if enemy.name == "魔法使い"{
+                Money += 300
+            }else if enemy.name == "槍使い"{
+                Money += 400
+            }else if enemy.name == "魔神"{
+                Money += 500
+            }else if enemy.name == "金持ち"{
+                Money += 600
+            }
+            defaults.set(enemyCount, forKey: "enemyCount")
+            defaults.set(Money, forKey: "Money")
+            finishBattle(vanishImageView: enemyImageView, isPlayerWin: true)
+        }    }
     /*
     // MARK: - Navigation
 

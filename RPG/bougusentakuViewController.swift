@@ -5,20 +5,11 @@ class bougusentakuViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var nanidoLabel: UILabel!
     
-    var bouguArray: [String] = [
-        "armor_koshiate_green","armor_koshiate_blue","armor_koshiate_red","armor_koshiate_iron"
-    ]
-    var nameArray: [String] = [
-        "風の防具","水の防具","炎の防具","鉄の防具"
-    ]
-    var bougusuti: [Int] = [
-        3,3,3,3
-    ]
+    var bouguArray: [String] = ItemStorage.bouguArray
+    var bouguNameArray: [String] = ItemStorage.bouguNameArray
+    var bouguSutiArray: [Int] = ItemStorage.bouguSutiArray
     
-    var nanido2Array: [String] = ["風属性の攻撃に耐性がある防具",
-                                 "水属性の攻撃に耐性がある防具",
-                                 "炎属性の攻撃に耐性がある防具",
-                                 "一般的な防具"]
+    var bouguKaisetuArray: [String] = ItemStorage.bouguKaisetuArray
     
     var index: Int = 0
     
@@ -27,6 +18,9 @@ class bougusentakuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        bouguArray = ItemStorage.showMyBougu(bouguArray)
+        bouguNameArray = ItemStorage.showMyBougu(bouguNameArray)
+        bouguSutiArray = ItemStorage.showMyBougu(bouguSutiArray)
 setUI()
         // Do any additional setup after loading the view.
     }
@@ -35,8 +29,8 @@ setUI()
     
     func setUI() {
         imageView.image = UIImage(named: bouguArray[index])
-        nameLabel.text = nameArray[index]
-        nanidoLabel.text = nanido2Array[index]
+        nameLabel.text = bouguNameArray[index]
+        nanidoLabel.text = bouguKaisetuArray[index]
     }
     
     @IBAction func next(){
@@ -62,7 +56,7 @@ setUI()
     @IBAction func close(){
         let Value = bouguArray[index]
         UserDefaults.standard.set(Value, forKey: "bougu")
-        let Value3 = bougusuti[index]
+        let Value3 = bouguSutiArray[index]
         UserDefaults.standard.set(Value3, forKey: "bougusuti")
 
         dismiss(animated: true)
