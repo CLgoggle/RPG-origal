@@ -222,6 +222,10 @@ class BattleViewController: UIViewController {
             }else if enemy.name == "金持ち"{
                 Money += 600
             }
+            
+            if enemyCount == 25 {
+                Money += 500
+            }
             defaults.set(enemyCount, forKey: "enemyCount")
             defaults.set(Money, forKey: "Money")
             finishBattle(vanishImageView: enemyImageView, isPlayerWin: true)
