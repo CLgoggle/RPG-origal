@@ -14,6 +14,8 @@ class LobbyViewController: UIViewController {
     @IBOutlet var bouguLabel: UILabel!
     @IBOutlet weak var MoneyLabel: UILabel!
     @IBOutlet weak var enemyCountLabel: UILabel!
+    @IBOutlet var genkeikentiLabel:UILabel!
+    @IBOutlet var saikeikentiLabel:UILabel!
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
@@ -40,6 +42,11 @@ class LobbyViewController: UIViewController {
         UserDefaults.standard.set(Money, forKey: "Money")
        
        }
+    
+    func setkeikenti(){
+        var genkeikenti = UserDefaults.standard.integer(forKey: "keikenti")
+        genkeikentiLabel.text = String(genkeikenti)
+    }
     
     func updateEnemyCountLabel() {
           let enemyCount = UserDefaults.standard.integer(forKey: "enemyCount")

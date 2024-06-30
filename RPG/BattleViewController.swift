@@ -208,19 +208,26 @@ class BattleViewController: UIViewController {
         if enemy.currentHP <= 0 {
             var enemyCount = defaults.integer(forKey: "enemyCount")
             var Money = defaults.integer(forKey: "Money")
+            var keikenti = defaults.integer(forKey: "keikenti")
             enemyCount += 1
             if enemy.name == "ドラゴン" {
                 Money += 100
+                keikenti += 45
             }else if enemy.name == "雷神"{
                 Money += 200
+                keikenti += 55
             }else if enemy.name == "魔法使い"{
                 Money += 300
+                keikenti += 70
             }else if enemy.name == "槍使い"{
                 Money += 400
+                keikenti += 73
             }else if enemy.name == "魔神"{
                 Money += 500
+                keikenti += 83
             }else if enemy.name == "金持ち"{
                 Money += 600
+                keikenti += 23
             }
             
             if enemyCount == 25 {
@@ -228,6 +235,7 @@ class BattleViewController: UIViewController {
             }
             defaults.set(enemyCount, forKey: "enemyCount")
             defaults.set(Money, forKey: "Money")
+            defaults.set(keikenti, forKey: "keikenti")
             finishBattle(vanishImageView: enemyImageView, isPlayerWin: true)
         }    }
     /*
