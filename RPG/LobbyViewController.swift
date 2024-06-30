@@ -15,18 +15,21 @@ class LobbyViewController: UIViewController {
     @IBOutlet weak var MoneyLabel: UILabel!
     @IBOutlet weak var enemyCountLabel: UILabel!
     @IBOutlet var genkeikentiLabel:UILabel!
-    @IBOutlet var saikeikentiLabel:UILabel!
+    @IBOutlet var LVLabel:UILabel!
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
     }
-    
+    var saikeikenti = 200
+    var LV = 1
+    var keikenti = 0
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateEnemyCountLabel()
-        
+        setkeikenti()
 
+        
         
         // Do any additional setup after loading the view.
     }
@@ -37,7 +40,6 @@ class LobbyViewController: UIViewController {
         var Money = UserDefaults.standard.integer(forKey: "Money")
         Money += 1
     
-
            UserDefaults.standard.set(enemyCount, forKey: "enemyCount")
         UserDefaults.standard.set(Money, forKey: "Money")
        
@@ -45,7 +47,16 @@ class LobbyViewController: UIViewController {
     
     func setkeikenti(){
         var genkeikenti = UserDefaults.standard.integer(forKey: "keikenti")
-        genkeikentiLabel.text = String(genkeikenti)
+        genkeikentiLabel.text = String(genkeikenti) + "/" + "\(saikeikenti)"
+        if genkeikenti >= saikeikenti{
+            genkeikenti = genkeikenti - saikeikenti
+            saikeikenti = saikeikenti + 100
+            LV = LV + 1
+            keikenti = genkeikenti
+            genkeikentiLabel.text = String(genkeikenti) + "/" + "\(saikeikenti)"
+            LVLabel.text = "Lv." + String(LV)
+            UserDefaults.standard.set(keikenti, forKey: "keikenti")
+        }
     }
     
     func updateEnemyCountLabel() {
@@ -86,7 +97,7 @@ class LobbyViewController: UIViewController {
                 updateEnemyCountLabel()
         view.setNeedsLayout()
             view.layoutIfNeeded()
-        
+        setkeikenti()
     }
     
     
